@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f6f8fb"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg)"/>
+
+  <!-- Top navbar -->
+  <rect x="0" y="0" width="1200" height="64" rx="0" fill="#ffffff" stroke="#e6e9ef"/>
+  <text x="28" y="40" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827" font-weight="600">My Dashboard</text>
+  <!-- profile circle -->
+  <circle cx="1140" cy="32" r="18" fill="#eef2ff"/>
+  <text x="1134" y="38" font-family="Inter, Arial, sans-serif" font-size="14" fill="#4f46e5">A</text>
+
+  <!-- Sidebar -->
+  <rect x="20" y="84" width="220" height="580" rx="12" fill="#ffffff" stroke="#e6e9ef" filter="url(#shadow)"/>
+  <text x="40" y="120" font-family="Inter, Arial, sans-serif" font-size="12" fill="#6b7280" font-weight="600">MAIN</text>
+  <!-- sidebar items -->
+  <g font-family="Inter, Arial, sans-serif" font-size="14" fill="#111827">
+    <rect x="34" y="136" width="172" height="36" rx="8" fill="url(#accent)"/>
+    <text x="64" y="160" fill="#ffffff">Dashboard</text>
+    <text x="54" y="202" fill="#374151">Analytics</text>
+    <text x="54" y="234" fill="#374151">Users</text>
+    <text x="54" y="266" fill="#374151">Products</text>
+    <text x="54" y="298" fill="#374151">Orders</text>
+    <text x="54" y="330" fill="#374151">Messages</text>
+  </g>
+
+  <!-- Main content area -->
+  <rect x="260" y="84" width="920" height="580" rx="12" fill="none"/>
+
+  <!-- Greeting + actions -->
+  <text x="280" y="118" font-family="Inter, Arial, sans-serif" font-size="20" fill="#111827" font-weight="700">Welcome back, Alex</text>
+  <text x="280" y="142" font-family="Inter, Arial, sans-serif" font-size="13" fill="#6b7280">Here's a quick look at your system today.</text>
+  <!-- action buttons -->
+  <rect x="980" y="100" width="80" height="32" rx="6" fill="url(#accent)"/>
+  <text x="1000" y="121" font-family="Inter, Arial, sans-serif" font-size="12" fill="#ffffff">New</text>
+
+  <!-- Metrics cards -->
+  <g filter="url(#shadow)">
+    <rect x="280" y="170" width="220" height="96" rx="10" fill="#ffffff" stroke="#eef2f6"/>
+    <rect x="516" y="170" width="220" height="96" rx="10" fill="#ffffff" stroke="#eef2f6"/>
+    <rect x="752" y="170" width="220" height="96" rx="10" fill="#ffffff" stroke="#eef2f6"/>
+    <rect x="988" y="170" width="220" height="96" rx="10" fill="#ffffff" stroke="#eef2f6"/>
+  </g>
+  <text x="300" y="200" font-family="Inter, Arial, sans-serif" font-size="12" fill="#6b7280">Total Users</text>
+  <text x="300" y="230" font-family="Inter, Arial, sans-serif" font-size="24" fill="#111827" font-weight="700">1,234</text>
+
+  <text x="536" y="200" font-family="Inter, Arial, sans-serif" font-size="12" fill="#6b7280">Total Sales</text>
+  <text x="536" y="230" font-family="Inter, Arial, sans-serif" font-size="24" fill="#111827" font-weight="700">$56,789</text>
+
+  <text x="772" y="200" font-family="Inter, Arial, sans-serif" font-size="12" fill="#6b7280">New Orders</text>
+  <text x="772" y="230" font-family="Inter, Arial, sans-serif" font-size="24" fill="#111827" font-weight="700">345</text>
+
+  <text x="1008" y="200" font-family="Inter, Arial, sans-serif" font-size="12" fill="#6b7280">Pending Reviews</text>
+  <text x="1008" y="230" font-family="Inter, Arial, sans-serif" font-size="24" fill="#111827" font-weight="700">89</text>
+
+  <!-- Large chart placeholder -->
+  <rect x="280" y="290" width="700" height="260" rx="10" fill="#ffffff" stroke="#eef2f6" filter="url(#shadow)"/>
+  <text x="300" y="318" font-family="Inter, Arial, sans-serif" font-size="14" fill="#111827">Revenue Overview</text>
+  <!-- fake line/chart -->
+  <polyline points="300,520 360,420 420,460 480,380 540,420 600,360 660,400 820,340 960,380" fill="none" stroke="#06b6d4" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Right column small cards -->
+  <rect x="992" y="290" width="188" height="120" rx="10" fill="#ffffff" stroke="#eef2f6" filter="url(#shadow)"/>
+  <text x="1004" y="318" font-family="Inter, Arial, sans-serif" font-size="14" fill="#111827">User Distribution</text>
+  <rect x="992" y="422" width="188" height="128" rx="10" fill="#ffffff" stroke="#eef2f6" filter="url(#shadow)"/>
+  <text x="1004" y="450" font-family="Inter, Arial, sans-serif" font-size="14" fill="#111827">System Alerts</text>
+
+  <!-- Footer small text -->
+  <text x="280" y="578" font-family="Inter, Arial, sans-serif" font-size="12" fill="#9ca3af">Last updated: today</text>
+
+</svg>

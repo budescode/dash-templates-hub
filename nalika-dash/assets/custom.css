@@ -1,0 +1,211 @@
+/* Nalika Dark Theme */
+:root {
+    --primary-bg: #152036;
+    --secondary-bg: #1b2a47;
+    --accent-color: #24caa1;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: var(--secondary-bg);
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 240px;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.main-content {
+    margin-left: 240px;
+    background-color: var(--primary-bg);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--secondary-bg) !important;
+    border: none !important;
+    color: var(--text-color) !important;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: var(--secondary-bg) !important;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+}
+
+.btn-danger {
+    background-color: #eb4b4b !important;
+    border-color: #eb4b4b !important;
+}
+
+.btn-info {
+    background-color: #2eb7f3 !important;
+    border-color: #2eb7f3 !important;
+}
+
+.btn-warning {
+    background-color: #f8ac59 !important;
+    border-color: #f8ac59 !important;
+}
+
+.form-control, .form-select {
+    background-color: var(--primary-bg) !important;
+    border-color: var(--primary-bg) !important;
+    color: var(--text-color) !important;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: var(--primary-bg) !important;
+    border-color: var(--accent-color) !important;
+    color: var(--text-color) !important;
+    box-shadow: none !important;
+}
+
+.table {
+    color: var(--text-color) !important;
+    background-color: transparent !important;
+}
+
+.table thead th {
+    border-color: var(--primary-bg) !important;
+    background-color: var(--secondary-bg) !important;
+}
+
+.table td {
+    border-color: var(--primary-bg) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color) !important;
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+    padding: 12px 20px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+    background-color: var(--primary-bg);
+}
+
+.progress {
+    background-color: var(--primary-bg) !important;
+    height: 5px;
+}
+
+.progress-bar {
+    background-color: var(--accent-color) !important;
+}
+
+.bg-success {
+    background-color: var(--accent-color) !important;
+}
+
+.bg-danger {
+    background-color: #eb4b4b !important;
+}
+
+.bg-info {
+    background-color: #2eb7f3 !important;
+}
+
+.bg-warning {
+    background-color: #f8ac59 !important;
+}
+
+.stat-card {
+    /* padding: 20px; */
+    border-radius: 5px;
+}
+
+.breadcrumb {
+    background-color: var(--secondary-bg) !important;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.breadcrumb-item {
+    color: var(--text-color) !important;
+}
+
+.breadcrumb-item.active {
+    color: var(--accent-color) !important;
+}
+
+.footer {
+    background-color: var(--secondary-bg);
+    padding: 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.dropdown-menu {
+    background-color: var(--secondary-bg) !important;
+    border: none !important;
+}
+
+.dropdown-item {
+    color: var(--text-color) !important;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-bg) !important;
+    color: var(--accent-color) !important;
+}
+
+.modal-content {
+    background-color: var(--secondary-bg) !important;
+    color: var(--text-color) !important;
+}
+
+.modal-header {
+    border-bottom-color: var(--primary-bg) !important;
+}
+
+.modal-footer {
+    border-top-color: var(--primary-bg) !important;
+}
+
+.alert {
+    border: none !important;
+}
+
+/* .badge {
+    padding: 5px 10px;
+} */
+
+input::placeholder {
+    color: #999 !important;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-bg);
+}
+
+.login-card {
+    max-width: 400px;
+    width: 100%;
+}

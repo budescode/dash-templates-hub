@@ -1,0 +1,28 @@
+/* assets/sidebar.css */
+
+/* --- 1. Inactive State (The change you asked for) --- */
+.nav-pills .nav-link {
+    color: black !important; /* Forces text to be black when not active */
+}
+
+/* Optional: Add a light gray background on hover */
+.nav-pills .nav-link:hover {
+    background-color: #f0f0f0; 
+    color: black !important;
+}
+
+
+/* --- 2. Active State (Keep this from before) --- */
+.nav-pills .nav-link.active {
+    /* Your Primary Color */
+    background-color: #6366f1 !important; 
+    
+    /* Important: Keeps the active text WHITE so it's readable */
+    color: white !important; 
+}
+
+/* Fixes icons inside the active link to also be white */
+.nav-pills .nav-link.active i,
+.nav-pills .nav-link.active span {
+    color: white !important;
+}
