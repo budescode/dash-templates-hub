@@ -169,6 +169,14 @@ Please keep each dashboard self-contained and runnable with `python app.py`.
 
 ---
 
+## Support
+
+If this project has been useful to you, consider buying me a coffee — it helps keep new dashboards coming every week!
+
+[![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-0070ba?logo=paypal&logoColor=white)](https://www.paypal.com/paypalme/omonbudeemma)
+
+---
+
 ## License
 
 Each dashboard is a reimplementation of an open-source template. Original template licenses apply to the design assets. The Dash Python code in this repo is released under the [MIT License](LICENSE).
