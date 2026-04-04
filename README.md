@@ -161,9 +161,9 @@ Dashboards are added weekly. Watch or star the repo to get notified.
 
 Contributions are welcome. If you've rebuilt an admin template in Dash and want it included:
 
-1. Fork the repo
-2. Add your dashboard in its own directory with a `requirements.txt` and basic `README.md`
-3. Open a pull request
+1. Fork the repo.
+2. Add your dashboard in its own directory with a `requirements.txt` and basic `README.md` for the repo.
+3. Open a pull request.
 
 Please keep each dashboard self-contained and runnable with `python app.py`.
 
