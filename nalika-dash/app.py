@@ -58,4 +58,4 @@ def display_page(pathname):
         return html.Div([create_sidebar(), html.Div([create_navbar(), dashboard.layout], className='main-content')])
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8050)
+    app.run(debug=True, port=8054)

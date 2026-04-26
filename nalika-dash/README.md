@@ -1,132 +1,143 @@
-# Nalika Dashboard - Dash Bootstrap Components Version
+# Nalika Dark Admin Dashboard — Dash Version
 
-A complete rewrite of the Nalika Bootstrap admin dashboard template using Dash and Dash Bootstrap Components.
+A dark-themed admin dashboard built with Plotly Dash, based on the Nalika Bootstrap admin template. Designed for professional and corporate environments with a teal accent palette across 17 pages.
 
 ## Features
 
-- **Dark Theme Design** - Matching the original Nalika dark color scheme
-- **Responsive Layout** - Works on all devices
-- **Multiple Pages**:
-  - Dashboard (Main page with stats, charts, products)
-  - Login Page
-  - Analytics (Progress bars, charts, metrics table)
-  - Charts (Line, Bar, Area, Donut charts)
-  - Data Tables (Static and interactive tables)
-  - Forms (Basic, advanced, input groups)
-  - Widgets (Alerts, badges, buttons, progress bars, cards, spinners)
+- Dark theme throughout — `#152036` background, `#24caa1` teal accent
+- Fully built pages covering analytics, UI components, and utilities
+- Interactive Plotly charts — line, bar, area, donut
+- Static and interactive data tables
+- Forms, modals, progress bars, notifications, calendar, maps, and more
+- Responsive layout with collapsible sidebar
 
 ## Installation
 
-1. Install dependencies:
+**Prerequisites:** Python 3.8+
+
 ```bash
+cd nalika-dash
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-```
-
-2. Run the application:
-```bash
 python app.py
+# → http://localhost:8054
 ```
 
-3. Open your browser and navigate to:
-```
-http://localhost:8050
-```
+### Production Deployment
+
+For deployment, see the official Dash deployment guide: https://dash.plotly.com/deployment
 
 ## Project Structure
 
 ```
 nalika-dash/
-├── app.py                 # Main application file
-├── requirements.txt       # Python dependencies
-├── assets/
-│   └── custom.css        # Custom dark theme CSS
+├── app.py
+├── requirements.txt
 ├── components/
-│   ├── sidebar.py        # Sidebar navigation component
-│   └── navbar.py         # Top navbar component
-└── pages/
-    ├── dashboard.py      # Main dashboard page
-    ├── login.py          # Login page
-    ├── analytics.py      # Analytics page
-    ├── charts.py         # Charts page
-    ├── tables.py         # Data tables page
-    ├── forms.py          # Forms page
-    └── widgets.py        # Widgets page
+│   ├── sidebar.py
+│   └── navbar.py
+├── pages/
+│   ├── dashboard.py
+│   ├── analytics.py
+│   ├── charts.py
+│   ├── tables.py
+│   ├── forms.py
+│   ├── widgets.py
+│   ├── cards.py
+│   ├── buttons.py
+│   ├── modals.py
+│   ├── progress.py
+│   ├── notifications.py
+│   ├── calendar.py
+│   ├── tabs_accordions.py
+│   ├── maps.py
+│   ├── mailbox.py
+│   ├── profile.py
+│   └── login.py
+└── assets/
+    └── custom.css
 ```
 
-## Pages Overview
+## Pages & Routes
 
-### Dashboard (/)
-- Statistics cards (Orders, Tax, Revenue, Sales)
-- Product sales chart
-- Analytics metrics
-- Traffic analysis
-- Product showcase
-- Footer
-
-### Login (/login)
-- Clean login form
-- Username and password fields
-- Remember me checkbox
-- Register button
-
-### Analytics (/analytics)
-- Progress bars with percentages
-- Revenue analytics chart
-- Sales distribution pie chart
-- Performance metrics table
-
-### Charts (/charts)
-- Line chart with multiple series
-- Grouped bar chart
-- Area chart
-- Donut chart
-
-### Tables (/tables)
-- Static table with actions
-- Interactive data table with sorting and filtering
-- Bordered table
-
-### Forms (/forms)
-- Basic form elements
-- Advanced form elements (dropdowns, sliders, checkboxes, radio buttons)
-- Input groups with icons and buttons
-
-### Widgets (/widgets)
-- Alerts (success, info, warning, danger)
-- Badges
-- Buttons (various colors and sizes)
-- Progress bars (striped, animated)
-- Cards
-- Spinners
-- Tooltips and popovers
+| Page | Route | Description |
+|------|-------|-------------|
+| Dashboard | `/` | KPI cards, sales chart, analytics metrics |
+| Analytics | `/analytics` | Progress bars, revenue chart, metrics table |
+| Charts | `/charts` | Line, bar, area, donut charts |
+| Tables | `/tables` | Static table, interactive data table, bordered table |
+| Forms | `/forms` | Basic and advanced form elements, input groups |
+| Widgets | `/widgets` | Alerts, badges, buttons, progress bars, spinners |
+| Cards | `/cards` | Card variants with image, header, colored background |
+| Buttons | `/buttons` | Button styles, sizes, and variants |
+| Modals | `/modals` | Modal dialogs — sm, md, lg, xl |
+| Progress | `/progress` | Progress bar styles and animations |
+| Notifications | `/notifications` | Notification styles and examples |
+| Calendar | `/calendar` | Calendar view |
+| Tabs & Accordions | `/tabs-accordions` | Tabbed content and accordion panels |
+| Maps | `/maps` | Interactive map |
+| Mailbox | `/mailbox` | Inbox layout |
+| Profile | `/profile` | User profile page |
+| Login | `/login` | Login form |
 
 ## Color Scheme
 
-- Primary Background: #152036
-- Secondary Background: #1b2a47
-- Accent Color: #24caa1
-- Text Color: #ffffff
-- Success: #24caa1
-- Danger: #eb4b4b
-- Info: #2eb7f3
-- Warning: #f8ac59
+| Token | Value |
+|-------|-------|
+| Background | `#152036` |
+| Card background | `#1b2a47` |
+| Accent | `#24caa1` |
+| Danger | `#eb4b4b` |
+| Info | `#2eb7f3` |
+| Warning | `#f8ac59` |
+| Text | `#ffffff` |
 
-## Customization
+## Dependencies
 
-You can customize the theme by editing `assets/custom.css`. The CSS uses CSS variables for easy color customization.
+| Package | Purpose |
+|---------|---------|
+| `dash` | Web framework & routing |
+| `dash-bootstrap-components` | Bootstrap 5 UI components |
+| `plotly` | Interactive charts |
+| `pandas` | Data handling |
 
-## Technologies Used
+## Screenshots
 
-- **Dash** - Python framework for building web applications
-- **Dash Bootstrap Components** - Bootstrap components for Dash
-- **Plotly** - Interactive charts and graphs
-- **Pandas** - Data manipulation for tables
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
 
-## License
+### Analytics
+![Analytics](screenshots/analytics.png)
 
-MIT License - Based on the original Nalika template by Colorlib
+### Charts
+![Charts](screenshots/charts.png)
 
-## Credits
+### Tables
+![Tables](screenshots/tables.png)
 
-Original Nalika template: https://colorlib.com/polygon/nalika/
-Converted to Dash Bootstrap Components
+### Forms
+![Forms](screenshots/forms.png)
+
+### Widgets
+![Widgets](screenshots/widgets.png)
+
+### Cards
+![Cards](screenshots/cards.png)
+
+### Buttons
+![Buttons](screenshots/buttons.png)
+
+### Modals
+![Modals](screenshots/modals.png)
+
+### Notifications
+![Notifications](screenshots/notifications.png)
+
+---
+
+Ported to Dash by [budescode](https://github.com/budescode).
+
+[![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-0070ba?logo=paypal&logoColor=white)](https://www.paypal.com/paypalme/omonbudeemma)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-budescode-0077B5?logo=linkedin)](https://www.linkedin.com/in/budescode)
+[![GitHub](https://img.shields.io/badge/GitHub-budescode-181717?logo=github)](https://github.com/budescode)

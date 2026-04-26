@@ -14,9 +14,12 @@ data = {
 
 df = pd.DataFrame(data)
 
+CARD_STYLE = {'backgroundColor': '#1b2a47', 'border': '1px solid #1e3a5f'}
+HEADER_STYLE = {'backgroundColor': '#152036', 'color': 'white', 'borderBottom': '1px solid #1e3a5f'}
+
 # Static Table
 static_table = dbc.Card([
-    dbc.CardHeader(html.H5('Static Table')),
+    dbc.CardHeader(html.H5('Static Table', style={'color': 'white'}), style=HEADER_STYLE),
     dbc.CardBody([
         dbc.Table([
             html.Thead([
@@ -80,13 +83,13 @@ static_table = dbc.Card([
                     ]),
                 ]),
             ])
-        ], bordered=True, hover=True, responsive=True, striped=True)
+        ], bordered=True, hover=True, responsive=True, striped=True, className='table-dark')
     ])
-], className='mb-4')
+], className='mb-4', style=CARD_STYLE)
 
 # Data Table
 data_table = dbc.Card([
-    dbc.CardHeader(html.H5('Interactive Data Table')),
+    dbc.CardHeader(html.H5('Interactive Data Table', style={'color': 'white'}), style=HEADER_STYLE),
     dbc.CardBody([
         dash_table.DataTable(
             id='product-table',
@@ -116,11 +119,11 @@ data_table = dbc.Card([
             filter_action='native',
         )
     ])
-], className='mb-4')
+], className='mb-4', style=CARD_STYLE)
 
 # Bordered Table
 bordered_table = dbc.Card([
-    dbc.CardHeader(html.H5('Bordered Table')),
+    dbc.CardHeader(html.H5('Bordered Table', style={'color': 'white'}), style=HEADER_STYLE),
     dbc.CardBody([
         dbc.Table([
             html.Thead([
@@ -155,9 +158,9 @@ bordered_table = dbc.Card([
                     html.Td(dbc.Badge('Manager', color='info')),
                 ]),
             ])
-        ], bordered=True, hover=True, responsive=True)
+        ], bordered=True, hover=True, responsive=True, className='table-dark')
     ])
-], className='mb-4')
+], className='mb-4', style=CARD_STYLE)
 
 layout = html.Div([
     dbc.Breadcrumb(items=[

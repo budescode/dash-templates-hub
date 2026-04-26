@@ -10,7 +10,7 @@ layout = html.Div([
     dbc.Row([
         dbc.Col([
             dbc.Card([
-                dbc.CardImg(src='https://via.placeholder.com/300x200', top=True),
+                dbc.CardImg(src='https://placehold.co/300x200', top=True),
                 dbc.CardBody([
                     html.H4('Card with Image', className='card-title'),
                     html.P('This card has an image at the top.'),

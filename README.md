@@ -13,8 +13,8 @@ Popular HTML/Bootstrap admin templates from across the web — rebuilt as fully 
 | Dashboard | Theme | Specialty | Port | View |
 |-----------|-------|-----------|------|------|
 | [Adminator](dash-admin-dashboard/) | Light / Modern | General admin | 8051 | [Live](https://09143eb7-503a-475d-8ca4-a2477c8cdce0.plotly.app/) |
-| [Nalika](#nalika) | Dark / Professional | Analytics-focused | 8050 | — |
-| [Bootstrap Admin Template](dash-ecommerce-admin/) | Light / Clean | E-commerce management | 8000 | — |
+| [Nalika](#nalika) | Dark / Professional | Analytics-focused | 8054 | — |
+| [Bootstrap Admin Template](dash-ecommerce-admin/) | Light / Clean | E-commerce management | 8053 | — |
 | [Kiaalap](#kiaalap) | Light / Indigo | Education management | 8050 | — |
 
 ## Screenshots
@@ -66,7 +66,7 @@ A dark-themed dashboard with a teal accent palette, suited for professional or c
 cd nalika-dash
 pip install -r requirements.txt
 python app.py
-# → http://localhost:8050
+# → http://localhost:8054
 ```
 
 ---
@@ -81,7 +81,7 @@ An e-commerce-focused admin dashboard with modules for managing the full lifecyc
 cd dash-ecommerce-admin
 pip install -r requirements.txt
 python app.py
-# → http://localhost:8000
+# → http://localhost:8053
 ```
 
 ---
