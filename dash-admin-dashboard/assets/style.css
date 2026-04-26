@@ -1,0 +1,89 @@
+/* Dash-specific helpers layered on top of the compiled Adminator stylesheet */
+
+/* Override @font-face paths — Dash serves assets/ at /assets/, not /static/ */
+@font-face {
+  font-family: "themify";
+  src: url("/assets/static/fonts/icons/themify/themify.eot");
+  src: url("/assets/static/fonts/icons/themify/themify.eot?#iefix") format("embedded-opentype"),
+       url("/assets/static/fonts/icons/themify/themify.woff") format("woff"),
+       url("/assets/static/fonts/icons/themify/themify.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("/assets/static/fonts/icons/fontawesome/fontawesome-webfont.eot");
+  src: url("/assets/static/fonts/icons/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
+       url("/assets/static/fonts/icons/fontawesome/fontawesome-webfont.woff") format("woff"),
+       url("/assets/static/fonts/icons/fontawesome/fontawesome-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  background: var(--c-bkg-body);
+  color: var(--c-text-base);
+}
+
+#page-content {
+  position: relative;
+  padding: 30px;
+  background: var(--c-bkg-body);
+  min-height: calc(100vh - 80px);
+}
+
+/* Full-width app pages (email, chat, compose) — no padding, full-container starts at edge */
+#page-content:has(.full-container) {
+  padding: 0;
+  min-height: 0;
+}
+
+/* full-container is already inside the sidebar-offset page-container, so left:0 is correct */
+.full-container {
+  left: 0 !important;
+  top: 0 !important;
+  min-height: calc(100vh - 126px) !important;
+}
+
+/* email side-nav is position:fixed — must be anchored explicitly (desktop only) */
+@media screen and (min-width: 992px) {
+  .email-app .email-side-nav {
+    left: 280px;
+    top: 65px;
+  }
+
+  .is-collapsed .email-app .email-side-nav {
+    left: 70px;
+  }
+}
+
+.js-plotly-plot .plotly .modebar {
+  display: none !important;
+}
+
+.sparkline-chart,
+.sparkline-chart > div {
+  height: 90px !important;
+}
+
+@media (max-width: 767px) {
+  #page-content {
+    padding: 15px;
+  }
+}
+
+/* FullCalendar */
+#fullcalendar {
+  background: #fff;
+  padding: 16px;
+  border-radius: 3px;
+}
+
+.fc .fc-button {
+  text-transform: capitalize;
+}
+
+.fc-event {
+  cursor: pointer;
+}
