@@ -270,6 +270,7 @@ If you find this useful, consider buying me a coffee ☕
 [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/omonbudeemma)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-budescode-0077B5.svg?logo=linkedin)](https://www.linkedin.com/in/budescode)
+[![GitHub](https://img.shields.io/badge/GitHub-budescode-181717?logo=github)](https://github.com/budescode)
 
 ---
 
