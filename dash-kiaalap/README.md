@@ -1,122 +1,185 @@
-# Kiaalap Dashboard - Dash Version
+# Kiaalap Education Dashboard — Dash Version
 
-A complete replication of the Kiaalap Education Management Dashboard built with Plotly Dash and Dash Bootstrap Components.
+A comprehensive education management system built with Plotly Dash, based on the [Kiaalap Bootstrap admin template](https://github.com/puikinsh/kiaalap). Covers the full lifecycle of an academic institution — students, professors, courses, library, departments, and more — across 50+ pages.
 
 ## Features
 
-- 📊 Multiple dashboard views with interactive charts
-- 👨‍🎓 Student management system
-- 👨‍🏫 Professor management
-- 📚 Course management
-- 📖 Library asset tracking
-- 🏢 Department management
-- 📧 Mailbox system
-- 🎨 UI components (buttons, forms, tables, charts)
-- 🔐 Authentication pages
-- 📱 Fully responsive design
+- Multiple dashboard views: main dashboard, analytics, widgets, events
+- Full academic management — Students, Professors, Courses, Library Assets, Departments (list · add · edit · profile/info)
+- Mailbox — Inbox, Compose, View
+- UI components — Buttons, Alerts, Modals, Accordion
+- Forms — Basic, Advanced, Password Meter, File Upload, Image Cropper
+- Charts — Line, Area, Bar (via Plotly)
+- Tables — Static and interactive data tables
+- Developer tools — Code Editor, PDF Viewer, Tree View, Preloader, Notifications
+- Maps — Interactive Maps, Data Maps
+- Authentication — Login, Register, Lock, Password Recovery, 404, 500
+- Dynamic breadcrumb in navbar that updates per page
 
 ## Installation
 
-1. Create a virtual environment (recommended):
-```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+**Prerequisites:** Python 3.8+
 
-2. Install dependencies:
 ```bash
+cd dash-kiaalap
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-```
-
-## Running the Application
-
-```bash
 python app.py
+# → http://localhost:8050
 ```
 
-The application will be available at `http://localhost:8050`
+### Production Deployment
+
+For deployment, see the official Dash deployment guide: https://dash.plotly.com/deployment
 
 ## Project Structure
 
 ```
 dash-kiaalap/
-├── app.py                 # Main application file
-├── requirements.txt       # Python dependencies
-├── assets/
-│   └── dashboard.css     # Custom CSS styles
+├── app.py
+├── requirements.txt
 ├── layouts/
-│   ├── sidebar.py        # Sidebar navigation
-│   ├── header.py         # Top navigation bar
-│   └── footer.py         # Footer component
-└── pages/
-    ├── index.py          # Main dashboard
-    ├── analytics.py      # Analytics dashboard
-    ├── all_students.py   # Student listing
-    ├── all_professors.py # Professor listing
-    ├── all_courses.py    # Course listing
-    └── ...               # Other pages
+│   ├── sidebar.py
+│   ├── header.py
+│   └── footer.py
+├── pages/
+│   ├── index.py
+│   ├── analytics.py
+│   ├── widgets.py
+│   ├── events.py
+│   ├── all_students.py
+│   ├── add_student.py
+│   ├── edit_student.py
+│   ├── student_profile.py
+│   ├── all_professors.py
+│   ├── add_professor.py
+│   ├── edit_professor.py
+│   ├── professor_profile.py
+│   ├── all_courses.py
+│   ├── add_course.py
+│   ├── edit_course.py
+│   ├── course_info.py
+│   ├── course_payment.py
+│   ├── library_assets.py
+│   ├── add_library_assets.py
+│   ├── edit_library_assets.py
+│   ├── departments.py
+│   ├── add_department.py
+│   ├── edit_department.py
+│   ├── mailbox.py
+│   ├── mailbox_compose.py
+│   ├── mailbox_view.py
+│   ├── buttons.py
+│   ├── alerts.py
+│   ├── modals.py
+│   ├── accordion.py
+│   ├── basic_form.py
+│   ├── advance_form.py
+│   ├── password_meter.py
+│   ├── multi_upload.py
+│   ├── images_cropper.py
+│   ├── line_charts.py
+│   ├── area_charts.py
+│   ├── bar_charts.py
+│   ├── static_table.py
+│   ├── data_table.py
+│   ├── code_editor.py
+│   ├── preloader.py
+│   ├── notifications.py
+│   ├── tree_view.py
+│   ├── pdf_viewer.py
+│   ├── google_map.py
+│   ├── data_maps.py
+│   ├── login.py
+│   ├── register.py
+│   ├── lock.py
+│   ├── password_recovery.py
+│   ├── error_404.py
+│   └── error_500.py
+└── assets/
+    └── dashboard.css
 ```
 
-## Pages Included
+## Adding New Pages
 
-### Main
-- Dashboard (3 variants)
-- Analytics
-- Widgets
-- Events
+1. Create `pages/new_page.py` and define a `layout` variable
+2. Import it in `app.py` and add a route in `display_page`
+3. Add it to `create_page_layout` call with a title
 
-### Academic
-- Students (List, Add, Edit, Profile)
-- Professors (List, Add, Edit, Profile)
-- Courses (List, Add, Edit, Info, Payment)
-- Library Assets (List, Add, Edit)
-- Departments (List, Add, Edit)
+```python
+# pages/new_page.py
+from dash import html
 
-### Communication
-- Mailbox (Inbox, Compose, View)
+layout = html.Div("New Page Content")
+```
 
-### Interface
-- Components (Buttons, Alerts, Modals, Accordion)
-- Forms (Basic, Advanced, Password Meter, File Upload, Image Cropper)
-- Charts (Line, Area, Bar)
-- Tables (Static, Data Tables)
+```python
+# app.py — import at the top
+from pages import new_page
 
-### Developer Tools
-- Code Editor
-- Preloaders
-- Notifications
-- Tree View
-- PDF Viewer
-- Maps (Interactive, Data Maps)
+# app.py — add inside display_page()
+elif pathname == '/new-page':
+    return create_page_layout(new_page.layout, 'New Page')
+```
 
-### Authentication
-- Login
-- Register
-- Lock Screen
-- Password Recovery
-- Error Pages (404, 500)
+## Dependencies
 
-## Customization
+| Package | Purpose |
+|---------|---------|
+| `dash` | Web framework & routing |
+| `dash-bootstrap-components` | Bootstrap 5 UI components |
+| `plotly` | Interactive charts |
+| `pandas` | Data handling |
 
-### Styling
-Edit `assets/dashboard.css` to customize colors, spacing, and other visual elements.
+## Screenshots
 
-### Adding New Pages
-1. Create a new file in `pages/` directory
-2. Define the layout using Dash HTML components
-3. Import and add the route in `app.py`
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
 
-## Technologies Used
+### Analytics
+![Analytics](screenshots/analytics.png)
 
-- **Plotly Dash**: Web application framework
-- **Dash Bootstrap Components**: Bootstrap components for Dash
-- **Plotly**: Interactive charts and graphs
-- **Pandas**: Data manipulation (optional)
+### Widgets
+![Widgets](screenshots/widgets.png)
 
-## License
+### Events
+![Events](screenshots/events.png)
 
-This project replicates the design of Kiaalap dashboard template.
+### All Students
+![All Students](screenshots/all_students.png)
 
-## Support
+### All Professors
+![All Professors](screenshots/all_professors.png)
 
-For issues and questions, please refer to the original Kiaalap documentation or Dash documentation.
+### All Courses
+![All Courses](screenshots/all_courses.png)
+
+### Library Assets
+![Library Assets](screenshots/library_assets.png)
+
+### Departments
+![Departments](screenshots/departments.png)
+
+### Mailbox
+![Mailbox](screenshots/mailbox.png)
+
+### Buttons
+![Buttons](screenshots/buttons.png)
+
+### Forms
+![Forms](screenshots/forms.png)
+
+### Charts
+![Charts](screenshots/charts.png)
+
+### Tables
+![Tables](screenshots/tables.png)
+
+---
+
+Ported to Dash by [budescode](https://github.com/budescode). Original template by Kiaalap.
+
+[![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-0070ba?logo=paypal&logoColor=white)](https://www.paypal.com/paypalme/omonbudeemma)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-budescode-0077B5?logo=linkedin)](https://www.linkedin.com/in/budescode)
+[![GitHub](https://img.shields.io/badge/GitHub-budescode-181717?logo=github)](https://github.com/budescode)

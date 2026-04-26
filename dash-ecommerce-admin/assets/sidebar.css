@@ -1,0 +1,27 @@
+/* assets/sidebar.css */
+
+/* --- Inactive State --- */
+.nav-pills .nav-link {
+    color: #000000 !important;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #f0f0f0;
+    color: #000000 !important;
+}
+
+
+/* Active State  */
+.nav-pills .nav-link.active {
+    /*  Primary Color */
+    background-color: #6366f1 !important; 
+    
+    /* Important: Keeps the active text WHITE so it's readable */
+    color: white !important; 
+}
+
+/* icons inside the active link to also be white */
+.nav-pills .nav-link.active i,
+.nav-pills .nav-link.active span {
+    color: white !important;
+}

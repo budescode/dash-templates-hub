@@ -4,13 +4,13 @@ layout = html.Footer([
     html.Div([
         html.Div([
             html.Div([
-                html.P('© 2024 Kiaalap. All rights reserved.', className='mb-0')
+                html.P('© 2025 Kiaalap · Ported to Dash by budescode. All rights reserved.', className='mb-0')
             ], className='col-md-6'),
             html.Div([
                 html.P([
-                    'Made with ',
-                    html.I(className='bi bi-heart-fill text-danger'),
-                    ' by Kiaalap Team'
+                    'Ported to Dash by ',
+                    html.A('budescode', href='https://github.com/budescode', target='_blank'),
+                    ' · Original design by Kiaalap'
                 ], className='mb-0 text-md-end')
             ], className='col-md-6')
         ], className='row')

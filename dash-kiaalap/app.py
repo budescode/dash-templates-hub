@@ -11,7 +11,8 @@ app = dash.Dash(
 )
 
 # Import layouts
-from layouts import sidebar, header, footer
+from layouts import sidebar, footer
+from layouts.header import create_header
 from pages import index, analytics, widgets, events, all_students, add_student, edit_student, student_profile
 from pages import all_professors, add_professor, edit_professor, professor_profile
 from pages import all_courses, add_course, edit_course, course_info, course_payment
@@ -22,7 +23,7 @@ from pages import buttons, alerts, modals, accordion
 from pages import basic_form, advance_form, password_meter, multi_upload, images_cropper
 from pages import line_charts, area_charts, bar_charts
 from pages import static_table, data_table
-from pages import code_editor, preloader, notifications, tree_view, pdf_viewer
+from pages import code_editor, preloader, notifications, tree_view, pdf_viewer, tools
 from pages import google_map, data_maps
 from pages import login, register, lock, password_recovery, error_404, error_500
 
@@ -39,7 +40,7 @@ app.layout = html.Div([
 )
 def display_page(pathname):
     if pathname == '/' or pathname == '/index':
-        return create_page_layout(index.layout, 'Dashboard v.1')
+        return create_page_layout(index.layout, 'Dashboard')
     elif pathname == '/analytics':
         return create_page_layout(analytics.layout, 'Analytics')
     elif pathname == '/widgets':
@@ -118,6 +119,8 @@ def display_page(pathname):
         return create_page_layout(static_table.layout, 'Static Tables')
     elif pathname == '/data-table':
         return create_page_layout(data_table.layout, 'Data Tables')
+    elif pathname == '/tools':
+        return create_page_layout(tools.layout, 'Tools')
     elif pathname == '/code-editor':
         return create_page_layout(code_editor.layout, 'Code Editor')
     elif pathname == '/preloader':
@@ -151,7 +154,7 @@ def create_page_layout(content, page_title):
     return html.Div([
         sidebar.layout,
         html.Div([
-            header.layout,
+            create_header(page_title),
             html.Main([
                 html.Div([content], className='container-fluid')
             ], className='dashboard-content', id='main-content'),
@@ -177,6 +180,7 @@ def create_page_layout(content, page_title):
         dash.dependencies.Output('nav-charts', 'className'),
         dash.dependencies.Output('nav-tables', 'className'),
         dash.dependencies.Output('nav-login', 'className'),
+        dash.dependencies.Output('nav-tools', 'className'),
     ],
     [dash.dependencies.Input('url', 'pathname')]
 )
@@ -231,6 +235,17 @@ def update_active_nav(pathname):
         '/google-map': 'nav-tables',
         '/data-maps': 'nav-tables',
         '/login': 'nav-login',
+        '/tools': 'nav-tools',
+        '/alerts': 'nav-tools',
+        '/modals': 'nav-tools',
+        '/accordion': 'nav-tools',
+        '/code-editor': 'nav-tools',
+        '/preloader': 'nav-tools',
+        '/notifications': 'nav-tools',
+        '/tree-view': 'nav-tools',
+        '/pdf-viewer': 'nav-tools',
+        '/google-map': 'nav-tools',
+        '/data-maps': 'nav-tools',
     }
     
     active_id = nav_links.get(pathname, None)
@@ -251,6 +266,7 @@ def update_active_nav(pathname):
         'nav-link active' if active_id == 'nav-charts' else 'nav-link',
         'nav-link active' if active_id == 'nav-tables' else 'nav-link',
         'nav-link active' if active_id == 'nav-login' else 'nav-link',
+        'nav-link active' if active_id == 'nav-tools' else 'nav-link',
     ]
 
 if __name__ == '__main__':

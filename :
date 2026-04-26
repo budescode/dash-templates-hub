@@ -1,0 +1,132 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: BUDESCODE <admin@Admins-MacBook-Pro.local>
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+
+Rename to dash-ecommerce-admin and refactor project
+
+- Renamed folder from Dash-Bootstrap-Admin-Template to dash-ecommerce-admin
+- Replaced px.scatter_mapbox with go.Scattermapbox in dashboard, geo_location, and sellers pages to fix pandas 2.x / plotly compatibility bug
+- Fixed sidebar nav link text color (black, overriding Bootstrap's default blue)
+- Rewrote README with full project structure, pages & routes, dataset attribution, screenshots, and adding new pages guide
+- Cleaned up clean_data.ipynb by removing duplicate and exploratory cells
+- Updated hub README to reflect new folder name and link
+
+
+#
+# Changes to be committed:
+#	modified:   README.md
+#	modified:   pyproject.toml
+#	modified:   requirements.txt
+#
+# Changes not staged for commit:
+#	deleted:    ../Dash-Bootstrap-Admin-Template/.DS_Store
+#	deleted:    ../Dash-Bootstrap-Admin-Template/.gitignore
+#	deleted:    ../Dash-Bootstrap-Admin-Template/.python-version
+#	deleted:    ../Dash-Bootstrap-Admin-Template/README.md
+#	deleted:    ../Dash-Bootstrap-Admin-Template/__pycache__/app.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/__pycache__/constants.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/__pycache__/sidebar.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/app.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/assets/.DS_Store
+#	deleted:    ../Dash-Bootstrap-Admin-Template/assets/BCsvg.png
+#	deleted:    ../Dash-Bootstrap-Admin-Template/assets/blogo.png
+#	deleted:    ../Dash-Bootstrap-Admin-Template/assets/icons/favicon.png
+#	deleted:    ../Dash-Bootstrap-Admin-Template/assets/icons/favicon.svg
+#	deleted:    ../Dash-Bootstrap-Admin-Template/assets/icons/icon-192.png
+#	deleted:    ../Dash-Bootstrap-Admin-Template/assets/icons/icon-512.png
+#	deleted:    ../Dash-Bootstrap-Admin-Template/assets/images/BCsvg.png
+#	deleted:    ../Dash-Bootstrap-Admin-Template/assets/images/avatar-placeholder.svg
+#	deleted:    ../Dash-Bootstrap-Admin-Template/assets/images/dashboard_mockup.svg
+#	deleted:    ../Dash-Bootstrap-Admin-Template/assets/images/logo.png
+#	deleted:    ../Dash-Bootstrap-Admin-Template/assets/images/logo1.svg
+#	deleted:    ../Dash-Bootstrap-Admin-Template/assets/images/product-placeholder.svg
+#	deleted:    ../Dash-Bootstrap-Admin-Template/assets/sidebar.css
+#	deleted:    ../Dash-Bootstrap-Admin-Template/config/__init__.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/config/__pycache__/__init__.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/config/__pycache__/__init__.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/config/__pycache__/constants.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/config/__pycache__/constants.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/config/__pycache__/helpers.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/config/__pycache__/helpers.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/config/constants.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/config/helpers.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/data/.DS_Store
+#	deleted:    ../Dash-Bootstrap-Admin-Template/data/fortune500.csv
+#	deleted:    ../Dash-Bootstrap-Admin-Template/data/raw/customers.csv
+#	deleted:    ../Dash-Bootstrap-Admin-Template/data/raw/geolocation.csv
+#	deleted:    ../Dash-Bootstrap-Admin-Template/data/raw/order_items.csv
+#	deleted:    ../Dash-Bootstrap-Admin-Template/data/raw/order_payments.csv
+#	deleted:    ../Dash-Bootstrap-Admin-Template/data/raw/order_reviews.csv
+#	deleted:    ../Dash-Bootstrap-Admin-Template/data/raw/orders.csv
+#	deleted:    ../Dash-Bootstrap-Admin-Template/data/raw/product_category_name_translation.csv
+#	deleted:    ../Dash-Bootstrap-Admin-Template/data/raw/products.csv
+#	deleted:    ../Dash-Bootstrap-Admin-Template/data/raw/sellers.csv
+#	deleted:    ../Dash-Bootstrap-Admin-Template/data/revenue_analytics.csv
+#	deleted:    ../Dash-Bootstrap-Admin-Template/notebooks/clean_data.ipynb
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__init__.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/__init__.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/__init__.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/calendar.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/calendar.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/dashboard.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/dashboard.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/files.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/files.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/geo_location.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/geo_location.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/help_support.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/help_support.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/messages.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/messages.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/navbar_h.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/navbar_h.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/orders.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/orders.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/payments.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/payments.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/products.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/products.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/reviews.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/reviews.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/security.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/security.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/sellers.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/sellers.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/settings.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/settings.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/sidebar.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/sidebar.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/users.cpython-313.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/__pycache__/users.cpython-314.pyc
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/calendar.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/dashboard.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/files.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/geo_location.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/help_support.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/messages.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/navbar_h.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/orders.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/payments.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/products.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/reviews.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/security.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/sellers.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/settings.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/sidebar.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pages/users.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/pyproject.toml
+#	deleted:    ../Dash-Bootstrap-Admin-Template/requirements.txt
+#	deleted:    ../Dash-Bootstrap-Admin-Template/rough/generate_time_series.py
+#	deleted:    ../Dash-Bootstrap-Admin-Template/uv.lock
+#	modified:   ../README.md
+#	modified:   ../dash-kiaalap/requirements.txt
+#	modified:   ../nalika-dash/requirements.txt
+#
+# Untracked files:
+#	../dash-ecommerce-admin/
+#

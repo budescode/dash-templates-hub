@@ -1,4 +1,0 @@
-dash==3.3.0
-dash-bootstrap-components==2.0.4
-dash_ag_grid==32.3.4
-pandas==2.3.3

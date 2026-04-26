@@ -127,6 +127,19 @@ layout = html.Aside([
             ], className='nav flex-column')
         ], className='menu-section'),
         
+        # Developer Tools Section
+        html.Div([
+            html.Div('Developer Tools', className='menu-section-title'),
+            html.Ul([
+                html.Li([
+                    dcc.Link([
+                        html.I(className='bi bi-tools'),
+                        html.Span('Tools')
+                    ], href='/tools', className='nav-link', id='nav-tools')
+                ], className='nav-item'),
+            ], className='nav flex-column')
+        ], className='menu-section'),
+
         # Pages Section
         html.Div([
             html.Div('Pages', className='menu-section-title'),

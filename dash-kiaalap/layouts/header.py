@@ -1,20 +1,21 @@
-from dash import html
+from dash import html, dcc
 import dash_bootstrap_components as dbc
 
-layout = html.Nav([
-    html.Div([
-        html.Button([
-            html.I(className='bi bi-list')
-        ], className='hamburger-menu', id='sidebarToggle'),
-        
-        html.Nav([
-            html.Ol([
-                html.Li([
-                    html.A('Home', href='/')
-                ], className='breadcrumb-item'),
-                html.Li('Dashboard', className='breadcrumb-item active')
-            ], className='breadcrumb mb-0')
-        ], **{'aria-label': 'breadcrumb'}, className='d-none d-lg-block ms-3'),
+def create_header(page_title='Dashboard'):
+    return html.Nav([
+        html.Div([
+            html.Button([
+                html.I(className='bi bi-list')
+            ], className='hamburger-menu', id='sidebarToggle'),
+
+            html.Nav([
+                html.Ol([
+                    html.Li([
+                        dcc.Link('Home', href='/')
+                    ], className='breadcrumb-item'),
+                    html.Li(page_title, className='breadcrumb-item active')
+                ], className='breadcrumb mb-0')
+            ], **{'aria-label': 'breadcrumb'}, className='d-none d-lg-block ms-3'),
         
         html.Div('Kiaalap', className='navbar-brand d-lg-none fw-bold me-auto'),
         
@@ -61,5 +62,5 @@ layout = html.Nav([
                 html.I(className='bi bi-chevron-down ms-1')
             ], color='light', className='d-flex align-items-center'),
         ], className='d-flex align-items-center gap-2')
-    ], className='container-fluid d-flex align-items-center h-100')
-], className='navbar top-navbar')
+        ], className='container-fluid d-flex align-items-center h-100')
+    ], className='navbar top-navbar')

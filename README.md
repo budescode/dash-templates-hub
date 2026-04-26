@@ -14,7 +14,7 @@ Popular HTML/Bootstrap admin templates from across the web — rebuilt as fully 
 |-----------|-------|-----------|------|------|
 | [Adminator](dash-admin-dashboard/) | Light / Modern | General admin | 8051 | [Live](https://09143eb7-503a-475d-8ca4-a2477c8cdce0.plotly.app/) |
 | [Nalika](#nalika) | Dark / Professional | Analytics-focused | 8050 | — |
-| [Bootstrap Admin Template](#bootstrap-admin-template) | Light / Clean | E-commerce management | 8000 | — |
+| [Bootstrap Admin Template](dash-ecommerce-admin/) | Light / Clean | E-commerce management | 8000 | — |
 | [Kiaalap](#kiaalap) | Light / Indigo | Education management | 8050 | — |
 
 ## Screenshots
@@ -72,14 +72,13 @@ python app.py
 ---
 
 ### Bootstrap Admin Template
-> Based on the Colorlib Bootstrap admin template
 
 An e-commerce-focused admin dashboard with modules for managing the full lifecycle of an online store.
 
 **Pages:** Dashboard · Orders · Products · Users · Sellers · Payments · Reviews · Messages · Files · Calendar · Geo Location · Security · Settings · Help & Support
 
 ```bash
-cd Dash-Bootstrap-Admin-Template
+cd dash-ecommerce-admin
 pip install -r requirements.txt
 python app.py
 # → http://localhost:8000
@@ -134,8 +133,8 @@ Some dashboards use additional packages (e.g. `dash-ag-grid` for advanced data t
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/dash-admin-dashboards.git
-cd dash-admin-dashboards
+git clone https://github.com/budescode/dash-templates-hub.git
+cd dash-templates-hub
 
 # Pick a dashboard, install its dependencies, and run it
 cd dash-kiaalap
@@ -176,6 +175,8 @@ Please keep each dashboard self-contained and runnable with `python app.py`.
 If this project has been useful to you, consider buying me a coffee — it helps keep new dashboards coming every week!
 
 [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-0070ba?logo=paypal&logoColor=white)](https://www.paypal.com/paypalme/omonbudeemma)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-budescode-0077B5?logo=linkedin)](https://www.linkedin.com/in/budescode)
+[![GitHub](https://img.shields.io/badge/GitHub-budescode-181717?logo=github)](https://github.com/budescode)
 
 ---
 
