@@ -122,7 +122,7 @@ def create_ui_elements_page():
                     html.A("A fourth link item", href="#", className="list-group-item list-group-item-action"),
                     html.A("A disabled link item", href="#",
                            className="list-group-item list-group-item-action disabled",
-                           tabIndex=-1, **{"aria-disabled": "true"}),
+                           tabIndex="-1", **{"aria-disabled": "true"}),
                 ]),
             ]),
 
@@ -132,7 +132,7 @@ def create_ui_elements_page():
                             className="btn btn-primary btn-color",
                             **{"data-bs-toggle": "modal", "data-bs-target": "#exampleModal"}),
                 html.Div(
-                    className="modal fade", id="exampleModal", tabIndex=-1,
+                    className="modal fade", id="exampleModal", tabIndex="-1",
                     **{"aria-labelledby": "exampleModalLabel", "aria-hidden": "true"},
                     children=html.Div(className="modal-dialog", children=html.Div(className="modal-content", children=[
                         html.Div(className="modal-header", children=[

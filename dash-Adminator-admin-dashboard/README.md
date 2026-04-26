@@ -60,14 +60,14 @@ A complete modern admin dashboard built with Dash and Dash Bootstrap Components,
 
 ### Start the development server:
 ```bash
-python index.py
+python app.py
 ```
 
 The application will be available at `http://localhost:8050`
 
 ### Production Deployment:
 ```bash
-python index.py
+python app.py
 # Or use Gunicorn for production:
 gunicorn --workers 4 index:app.server
 ```
