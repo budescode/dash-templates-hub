@@ -112,9 +112,26 @@ dash-ecommerce-admin/
 
 ## Dataset
 
-This dashboard uses the [Olist Brazilian E-Commerce dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) — a real-world dataset of ~100K orders from 2016–2018 covering customers, orders, products, sellers, payments, reviews, and geolocation.
+This dashboard uses the [Olist Brazilian E-Commerce dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) — a real-world dataset of ~100K orders from 2016–2018. The CSV files are not included in this repo due to size.
 
-Raw CSV files live in `data/raw/`. The `notebooks/clean_data.ipynb` notebook documents the data preparation steps.
+**To set up the data:**
+
+1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+2. Place the files in the existing `data/raw/` folder and rename them as follows:
+
+| Kaggle filename | Rename to |
+|----------------|-----------|
+| `olist_customers_dataset.csv` | `customers.csv` |
+| `olist_geolocation_dataset.csv` | `geolocation.csv` |
+| `olist_order_items_dataset.csv` | `order_items.csv` |
+| `olist_order_payments_dataset.csv` | `order_payments.csv` |
+| `olist_order_reviews_dataset.csv` | `order_reviews.csv` |
+| `olist_orders_dataset.csv` | `orders.csv` |
+| `olist_products_dataset.csv` | `products.csv` |
+| `olist_sellers_dataset.csv` | `sellers.csv` |
+| `product_category_name_translation.csv` | `product_category_name_translation.csv` |
+
+The `notebooks/clean_data.ipynb` notebook documents the data preparation steps.
 
 ## Adding New Pages
 

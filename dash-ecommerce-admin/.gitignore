@@ -1,2 +1,7 @@
 .venv
 /.venv/*
+__pycache__/
+*.pyc
+
+# Dataset — download from Kaggle (too large for git)
+data/raw/*.csv
