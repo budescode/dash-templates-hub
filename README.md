@@ -10,12 +10,12 @@ Popular HTML/Bootstrap admin templates from across the web — rebuilt as fully 
 
 ## Dashboards
 
-| Dashboard | Theme | Specialty | Port |
-|-----------|-------|-----------|------|
-| [Adminator](#adminator) | Light / Modern | General admin | 8051 |
-| [Nalika](#nalika) | Dark / Professional | Analytics-focused | 8050 |
-| [Bootstrap Admin Template](#bootstrap-admin-template) | Light / Clean | E-commerce management | 8000 |
-| [Kiaalap](#kiaalap) | Light / Indigo | Education management | 8050 |
+| Dashboard | Theme | Specialty | Port | View |
+|-----------|-------|-----------|------|------|
+| [Adminator](dash-admin-dashboard/) | Light / Modern | General admin | 8051 | [Live](https://09143eb7-503a-475d-8ca4-a2477c8cdce0.plotly.app/) |
+| [Nalika](#nalika) | Dark / Professional | Analytics-focused | 8050 | — |
+| [Bootstrap Admin Template](#bootstrap-admin-template) | Light / Clean | E-commerce management | 8000 | — |
+| [Kiaalap](#kiaalap) | Light / Indigo | Education management | 8050 | — |
 
 ## Screenshots
 
@@ -40,10 +40,12 @@ Popular HTML/Bootstrap admin templates from across the web — rebuilt as fully 
 
 A clean, modern general-purpose admin dashboard with 18 fully built pages.
 
+**Live Demo:** https://09143eb7-503a-475d-8ca4-a2477c8cdce0.plotly.app/
+
 **Pages:** Dashboard · Email · Compose · Chat · Calendar · Charts · Basic Tables · Data Tables · Forms · UI Elements · Google Maps · Vector Maps · Sign In · Sign Up · 404 · 500 · Blank
 
 ```bash
-cd dash-Adminator-admin-dashboard
+cd dash-admin-dashboard
 pip install -r requirements.txt
 python app.py
 # → http://localhost:8051
