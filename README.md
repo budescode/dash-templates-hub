@@ -12,82 +12,17 @@ Popular HTML/Bootstrap admin templates from across the web — rebuilt as fully 
 
 | Dashboard | Theme | Specialty | Port | View |
 |-----------|-------|-----------|------|------|
-| [Dash-Admin](dash-admin-dashboard/) | Light / Modern | General admin | 8051 | [Live](https://09143eb7-503a-475d-8ca4-a2477c8cdce0.plotly.app/) |
-| [Dash-Nalika](dash-nalika/) | Dark / Professional | Analytics-focused | 8054 | [Live](https://617c364e-d98b-4e70-97ca-60a0c04f5c69.plotly.app/) |
-| [Dash Ecommerce Admin](dash-ecommerce-admin/) | Light / Clean | E-commerce management | 8053 | — |
 | [Dash-Kiaalap](dash-kiaalap/) | Light / Indigo | Education management | 8050 | [Live](https://eea22046-514c-4815-9ae2-f1693ded335a.plotly.app/) |
-
-## Screenshots
-
-### Dash-Admin
-![Adminator Dashboard](screenshots/adminator.png)
-
-### Dash Nalika
-![Dash Nalika](screenshots/nalika.png)
-
-### Dash Ecommerce Admin
-![Dash Ecommerce Admin](screenshots/bootstrap-admin-template.png)
-
-### Kiaalap
-![Dash Nalika](screenshots/kiaalap.png)
-
----
+| [Dash-Admin](dash-admin-dashboard/) | Light / Modern | General admin | 8051 | [Live](https://09143eb7-503a-475d-8ca4-a2477c8cdce0.plotly.app/) |
+| [Dash Ecommerce Admin](dash-ecommerce-admin/) | Light / Clean | E-commerce management | 8053 | — |
+| [Dash-Nalika](dash-nalika/) | Dark / Professional | Analytics-focused | 8054 | [Live](https://617c364e-d98b-4e70-97ca-60a0c04f5c69.plotly.app/) |
 
 ## Dashboards in Detail
 
-### Adminator
-
-A clean, modern general-purpose admin dashboard with 18 fully built pages.
-
-**Live Demo:** https://09143eb7-503a-475d-8ca4-a2477c8cdce0.plotly.app/
-
-**Pages:** Dashboard · Email · Compose · Chat · Calendar · Charts · Basic Tables · Data Tables · Forms · UI Elements · Google Maps · Vector Maps · Sign In · Sign Up · 404 · 500 · Blank
-
-```bash
-cd dash-admin-dashboard
-pip install -r requirements.txt
-python app.py
-# → http://localhost:8051
-```
-
----
-
-### Dash Nalika
-> Inspiration from the Nalika Dash Admin
-
-A dark-themed dashboard with a teal accent palette, suited for professional or corporate environments.
-
-**Live Demo:** https://617c364e-d98b-4e70-97ca-60a0c04f5c69.plotly.app/
-
-**Pages:** Dashboard · Analytics · Charts · Tables · Forms · Widgets · Mailbox · Cards · Profile · Buttons · Modals · Progress · Notifications · Calendar · Tabs & Accordions · Maps · Login
-
-**Color palette:** `#152036` background · `#24caa1` accent · `#eb4b4b` danger
-
-```bash
-cd nalika-dash
-pip install -r requirements.txt
-python app.py
-# → http://localhost:8054
-```
-
----
-
-### Dash Ecommerce Admin
-
-An e-commerce-focused admin dashboard with modules for managing the full lifecycle of an online store.
-
-**Pages:** Dashboard · Orders · Products · Users · Sellers · Payments · Reviews · Messages · Files · Calendar · Geo Location · Security · Settings · Help & Support
-
-```bash
-cd dash-ecommerce-admin
-pip install -r requirements.txt
-python app.py
-# → http://localhost:8053
-```
-
----
-
 ### Dash Kiaalap
+
+![Dash Kiaalap](screenshots/kiaalap.png)
+
 > Inspiration from the Kiaalap Bootstrap admin template
 
 The most comprehensive dashboard in the collection — an education management system with 50+ pages covering academic, administrative, and developer tooling needs.
@@ -111,6 +46,65 @@ cd dash-kiaalap
 pip install -r requirements.txt
 python app.py
 # → http://localhost:8050
+```
+
+---
+
+### Adminator
+
+![Adminator Dashboard](screenshots/adminator.png)
+
+A clean, modern general-purpose admin dashboard with 18 fully built pages.
+
+**Live Demo:** https://09143eb7-503a-475d-8ca4-a2477c8cdce0.plotly.app/
+
+**Pages:** Dashboard · Email · Compose · Chat · Calendar · Charts · Basic Tables · Data Tables · Forms · UI Elements · Google Maps · Vector Maps · Sign In · Sign Up · 404 · 500 · Blank
+
+```bash
+cd dash-admin-dashboard
+pip install -r requirements.txt
+python app.py
+# → http://localhost:8051
+```
+
+---
+
+### Dash Ecommerce Admin
+
+![Dash Ecommerce Admin](screenshots/bootstrap-admin-template.png)
+
+An e-commerce-focused admin dashboard with modules for managing the full lifecycle of an online store.
+
+**Pages:** Dashboard · Orders · Products · Users · Sellers · Payments · Reviews · Messages · Files · Calendar · Geo Location · Security · Settings · Help & Support
+
+```bash
+cd dash-ecommerce-admin
+pip install -r requirements.txt
+python app.py
+# → http://localhost:8053
+```
+
+---
+
+### Dash Nalika
+
+![Dash Nalika](screenshots/nalika.png)
+
+> Inspiration from the Nalika Dash Admin
+
+A dark-themed dashboard with a teal accent palette, suited for professional or corporate environments.
+
+**Live Demo:** https://617c364e-d98b-4e70-97ca-60a0c04f5c69.plotly.app/
+
+**Pages:** Dashboard · Analytics · Charts · Tables · Forms · Widgets · Mailbox · Cards · Profile · Buttons · Modals · Progress · Notifications · Calendar · Tabs & Accordions · Maps · Login
+
+**Color palette:** `#152036` background · `#24caa1` accent · `#eb4b4b` danger
+
+```bash
+cd dash-nalika
+pip install -r requirements.txt
+python app.py
+# → http://localhost:8054
 ```
 
 ---
@@ -151,10 +145,10 @@ Each dashboard is self-contained with its own `requirements.txt` and can be run 
 
 ## Roadmap
 
-- [x] Adminator Admin Dashboard
-- [x] Nalika Dark Admin Dashboard
-- [x] Dash Ecommerce Admin (E-commerce)
-- [x] Kiaalap Education Management Dashboard
+- [x] Dash Kiaalap — Education Management Dashboard
+- [x] Adminator — General Admin Dashboard
+- [x] Dash Ecommerce Admin — E-commerce Dashboard
+- [x] Dash Nalika — Dark Analytics Dashboard
 - [ ] New dashboard — coming this week
 
 Dashboards are added weekly. Watch or star the repo to get notified.
@@ -185,4 +179,4 @@ If this project has been useful to you, consider buying me a coffee — it helps
 
 ## License
 
-Each dashboard is a reimplementation of an open-source template. Original template licenses apply to the design assets. The Dash Python code in this repo is released under the [MIT License](LICENSE).
+Each dashboard is either an original design or inspired by an existing admin template. The code in this repo is released under the [MIT License](LICENSE).
