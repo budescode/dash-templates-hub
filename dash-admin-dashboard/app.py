@@ -69,7 +69,7 @@ app.layout = html.Div(
                 html.Footer(
                     className='bdT ta-c p-30 lh-0 fsz-sm c-grey-600',
                     children=html.Span([
-                        "Copyright © 2025 · Ported to Dash by ",
+                        "Copyright © 2025 · Inspired by Adminator · Built with Dash by ",
                         html.A(
                             "budescode",
                             href="https://github.com/budescode",
@@ -84,14 +84,6 @@ app.layout = html.Div(
                             target="_blank",
                             rel="noopener noreferrer",
                             title="budescode on LinkedIn"
-                        ),
-                        " · Original design by ",
-                        html.A(
-                            "Colorlib",
-                            href="https://colorlib.com",
-                            target="_blank",
-                            rel="nofollow noopener noreferrer",
-                            title="Colorlib"
                         ),
                         ". All rights reserved."
                     ])

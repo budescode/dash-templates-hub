@@ -248,9 +248,7 @@ pip install -r requirements.txt
 
 ## License
 
-This project replicates the structure and design of the open-source Adminator dashboard template by puikinsh. The Dash implementation is provided as-is for educational and development purposes.
-
-Original Adminator: https://github.com/puikinsh/Adminator-admin-dashboard
+Inspired by the Adminator Bootstrap admin template. Built with Dash by [budescode](https://github.com/budescode).
 
 ## Contributing
 
@@ -274,4 +272,4 @@ If you find this useful, consider buying me a coffee ☕
 
 ---
 
-**Built with ❤️ using Dash and Dash Bootstrap Components**
+**Built with ❤️ using Dash 
