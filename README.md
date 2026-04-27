@@ -12,31 +12,30 @@ Popular HTML/Bootstrap admin templates from across the web — rebuilt as fully 
 
 | Dashboard | Theme | Specialty | Port | View |
 |-----------|-------|-----------|------|------|
-| [Adminator](dash-admin-dashboard/) | Light / Modern | General admin | 8051 | [Live](https://09143eb7-503a-475d-8ca4-a2477c8cdce0.plotly.app/) |
-| [Nalika](#nalika) | Dark / Professional | Analytics-focused | 8054 | — |
-| [Bootstrap Admin Template](dash-ecommerce-admin/) | Light / Clean | E-commerce management | 8053 | — |
-| [Kiaalap](#kiaalap) | Light / Indigo | Education management | 8050 | — |
+| [Dash-Admin](dash-admin-dashboard/) | Light / Modern | General admin | 8051 | [Live](https://09143eb7-503a-475d-8ca4-a2477c8cdce0.plotly.app/) |
+| [Dash-Nalika](dash-nalika/) | Dark / Professional | Analytics-focused | 8054 | [Live](https://617c364e-d98b-4e70-97ca-60a0c04f5c69.plotly.app/) |
+| [Dash Ecommerce Admin](dash-ecommerce-admin/) | Light / Clean | E-commerce management | 8053 | — |
+| [Dash-Kiaalap](dash-kiaalap/) | Light / Indigo | Education management | 8050 | [Live](https://eea22046-514c-4815-9ae2-f1693ded335a.plotly.app/) |
 
 ## Screenshots
 
-### Adminator
+### Dash-Admin
 ![Adminator Dashboard](screenshots/adminator.png)
 
-### Nalika
-![Nalika Dashboard](screenshots/nalika.png)
+### Dash Nalika
+![Dash Nalika](screenshots/nalika.png)
 
-### Bootstrap Admin Template
-![Bootstrap Admin Template](screenshots/bootstrap-admin-template.png)
+### Dash Ecommerce Admin
+![Dash Ecommerce Admin](screenshots/bootstrap-admin-template.png)
 
 ### Kiaalap
-![Kiaalap Dashboard](screenshots/kiaalap.png)
+![Dash Nalika](screenshots/kiaalap.png)
 
 ---
 
 ## Dashboards in Detail
 
 ### Adminator
-> Based on the [Adminator](https://github.com/puikinsh/Adminator-admin-dashboard) HTML template
 
 A clean, modern general-purpose admin dashboard with 18 fully built pages.
 
@@ -53,10 +52,12 @@ python app.py
 
 ---
 
-### Nalika
-> Based on the Nalika Bootstrap admin template
+### Dash Nalika
+> Inspiration from the Nalika Dash Admin
 
 A dark-themed dashboard with a teal accent palette, suited for professional or corporate environments.
+
+**Live Demo:** https://617c364e-d98b-4e70-97ca-60a0c04f5c69.plotly.app/
 
 **Pages:** Dashboard · Analytics · Charts · Tables · Forms · Widgets · Mailbox · Cards · Profile · Buttons · Modals · Progress · Notifications · Calendar · Tabs & Accordions · Maps · Login
 
@@ -71,7 +72,7 @@ python app.py
 
 ---
 
-### Bootstrap Admin Template
+### Dash Ecommerce Admin
 
 An e-commerce-focused admin dashboard with modules for managing the full lifecycle of an online store.
 
@@ -86,10 +87,12 @@ python app.py
 
 ---
 
-### Kiaalap
-> Based on the Kiaalap Bootstrap admin template
+### Dash Kiaalap
+> Inspiration from the Kiaalap Bootstrap admin template
 
 The most comprehensive dashboard in the collection — an education management system with 50+ pages covering academic, administrative, and developer tooling needs.
+
+**Live Demo:** https://eea22046-514c-4815-9ae2-f1693ded335a.plotly.app/
 
 **Page categories:**
 - **Academic** — Students, Professors, Courses, Library, Departments (full CRUD: list · add · edit · profile/info)
@@ -150,7 +153,7 @@ Each dashboard is self-contained with its own `requirements.txt` and can be run 
 
 - [x] Adminator Admin Dashboard
 - [x] Nalika Dark Admin Dashboard
-- [x] Bootstrap Admin Template (E-commerce)
+- [x] Dash Ecommerce Admin (E-commerce)
 - [x] Kiaalap Education Management Dashboard
 - [ ] New dashboard — coming this week
 

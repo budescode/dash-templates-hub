@@ -1,6 +1,6 @@
-# Kiaalap Education Dashboard — Dash Version
+# Dash Kiaalap
 
-A comprehensive education management system built with Plotly Dash, based on the [Kiaalap Bootstrap admin template](https://github.com/puikinsh/kiaalap). Covers the full lifecycle of an academic institution — students, professors, courses, library, departments, and more — across 50+ pages.
+A comprehensive education management system built with Plotly Dash, with inspiration from Kiaalap Bootstrap admin template. Covers the full lifecycle of an academic institution — students, professors, courses, library, departments, and more — across 50+ pages.
 
 ## Features
 
@@ -28,6 +28,8 @@ pip install -r requirements.txt
 python app.py
 # → http://localhost:8050
 ```
+
+**Live Demo:** https://eea22046-514c-4815-9ae2-f1693ded335a.plotly.app/
 
 ### Production Deployment
 
@@ -178,7 +180,7 @@ elif pathname == '/new-page':
 
 ---
 
-Ported to Dash by [budescode](https://github.com/budescode). Original template by Kiaalap.
+Inspired by the Kiaalap Bootstrap admin template. Built with Dash by [budescode](https://github.com/budescode).
 
 [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-0070ba?logo=paypal&logoColor=white)](https://www.paypal.com/paypalme/omonbudeemma)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-budescode-0077B5?logo=linkedin)](https://www.linkedin.com/in/budescode)

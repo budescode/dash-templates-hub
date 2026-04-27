@@ -1,4 +1,4 @@
-# Bootstrap Admin Template — Dash Version
+# Dash Ecommerce Admin
 
 An e-commerce admin dashboard built with Plotly Dash, based on the open-source Colorlib Bootstrap admin template. Manages the full lifecycle of an online store — orders, products, sellers, payments, reviews, and more — powered by real Brazilian e-commerce data.
 
@@ -198,8 +198,7 @@ dbc.NavLink(
 
 ---
 
-Built with [Dash](https://dash.plotly.com/) and [Dash Bootstrap Components](https://dash-bootstrap-components.opensource.faculty.ai/).
-Ported to Dash by [budescode](https://github.com/budescode).
+Inspired by a Bootstrap e-commerce admin template. Built with Dash by [budescode](https://github.com/budescode).
 
 [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-0070ba?logo=paypal&logoColor=white)](https://www.paypal.com/paypalme/omonbudeemma)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-budescode-0077B5?logo=linkedin)](https://www.linkedin.com/in/budescode)

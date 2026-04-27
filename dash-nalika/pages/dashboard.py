@@ -216,7 +216,13 @@ traffic_cards = dbc.Row([
 
 # Footer
 footer = html.Div([
-    html.P('Copyright © 2024 Nalika Dashboard. All rights reserved.', className='mb-0')
+    html.P([
+        'Copyright © 2025 · Inspired by Nalika · Built with Dash by ',
+        html.A('budescode', href='https://github.com/budescode', target='_blank'),
+        ' · ',
+        html.A('LinkedIn', href='https://www.linkedin.com/in/budescode', target='_blank'),
+        '. All rights reserved.'
+    ], className='mb-0')
 ], className='footer')
 
 layout = html.Div([

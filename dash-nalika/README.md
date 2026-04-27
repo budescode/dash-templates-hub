@@ -1,5 +1,5 @@
-# Nalika Dark Admin Dashboard — Dash Version
-
+# Das -Nalika
+ 
 A dark-themed admin dashboard built with Plotly Dash, based on the Nalika Bootstrap admin template. Designed for professional and corporate environments with a teal accent palette across 17 pages.
 
 ## Features
@@ -23,6 +23,8 @@ pip install -r requirements.txt
 python app.py
 # → http://localhost:8054
 ```
+
+**Live Demo:** https://617c364e-d98b-4e70-97ca-60a0c04f5c69.plotly.app/
 
 ### Production Deployment
 
@@ -136,7 +138,7 @@ nalika-dash/
 
 ---
 
-Ported to Dash by [budescode](https://github.com/budescode).
+Inspired by the Nalika Bootstrap admin template. Built with Dash by [budescode](https://github.com/budescode).
 
 [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-0070ba?logo=paypal&logoColor=white)](https://www.paypal.com/paypalme/omonbudeemma)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-budescode-0077B5?logo=linkedin)](https://www.linkedin.com/in/budescode)
