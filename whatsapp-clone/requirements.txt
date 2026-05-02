@@ -1,0 +1,17 @@
+dash==2.17.1
+dash-bootstrap-components==1.6.0
+Flask==3.0.3
+flask-socketio==5.3.6
+flask-sqlalchemy==3.1.1
+flask-login==0.6.3
+psycopg2-binary==2.9.9
+redis==5.0.3
+SQLAlchemy==2.0.29
+python-dotenv==1.0.1
+bcrypt==4.1.2
+python-jose[cryptography]==3.3.0
+Pillow==10.3.0
+requests==2.31.0
+gevent==24.2.1
+gevent-websocket==0.10.1
+eventlet==0.36.1

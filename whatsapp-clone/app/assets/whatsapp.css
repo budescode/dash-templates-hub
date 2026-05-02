@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #0b141a;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #374045;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4a5a63;
+}
+
+.modal-content {
+    background: #1f2c34 !important;
+    border: 1px solid #2a3942 !important;
+}
+
+.modal-header {
+    border-bottom: 1px solid #2a3942 !important;
+}
+
+.modal-footer {
+    border-top: 1px solid #2a3942 !important;
+}
+
+#conversations-list > div:hover {
+    background: #2a3942 !important;
+    transition: background 0.1s ease;
+}
+
+textarea.form-control:focus {
+    box-shadow: none !important;
+    background: #2a3942 !important;
+    border-color: #3b4a54 !important;
+    color: #e9edef !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    border-color: #25D366 !important;
+}
+
+.btn-success:hover {
+    background: #1da851 !important;
+}
+
+.btn-close {
+    filter: invert(1);
+}
+
+#messages-scroll {
+    scroll-behavior: smooth;
+}
+
+#messages-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* OTP input focus */
+input[id^="otp-"]:focus {
+    border-color: #25D366 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 2px rgba(37, 211, 102, 0.25) !important;
+}
+
+/* Conversation item active state */
+.conv-active {
+    background: #2a3942 !important;
+}
+
+/* Smooth transitions */
+#page-content {
+    transition: opacity 0.15s ease;
+}
+
+/* Message bubble animation */
+.message-bubble-enter {
+    animation: fadeInUp 0.2s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Input placeholder color */
+::placeholder {
+    color: #8696a0 !important;
+    opacity: 1;
+}
+
+/* Sidebar transition for mobile */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100% !important;
+    }
+
+    #chat-area {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+}
