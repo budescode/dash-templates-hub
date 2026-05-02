@@ -10,12 +10,12 @@ def register_auth_callbacks(app):
     @app.callback(
         Output('page-content', 'children'),
         Input('url', 'pathname'),
-        State('session-store', 'data'),
+        Input('session-store', 'data'),
     )
     def route_page(pathname, session_data):
         from ..layouts.auth import get_auth_layout
         from ..layouts.chat import get_chat_layout
-        if session_data and session_data.get('token'):
+        if session_data is not None and isinstance(session_data, dict) and session_data.get('token'):
             # Validate the token is still alive in Redis
             try:
                 resp = req.get(

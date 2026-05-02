@@ -14,6 +14,7 @@ Popular HTML/Bootstrap admin templates from across the web — rebuilt as fully 
 |-----------|-------|-----------|------|------|
 | [Dash-Kiaalap](dash-kiaalap/) | Light / Indigo | Education management | 8050 | [Live](https://eea22046-514c-4815-9ae2-f1693ded335a.plotly.app/) |
 | [Dash-Admin](dash-admin-dashboard/) | Light / Modern | General admin | 8051 | [Live](https://09143eb7-503a-475d-8ca4-a2477c8cdce0.plotly.app/) |
+| [WhatsApp Clone](whatsapp-clone/) | Dark / Green | Real-time messaging | 8050 | — |
 | [Dash Ecommerce Admin](dash-ecommerce-admin/) | Light / Clean | E-commerce management | 8053 | — |
 | [Dash-Nalika](dash-nalika/) | Dark / Professional | Analytics-focused | 8054 | [Live](https://617c364e-d98b-4e70-97ca-60a0c04f5c69.plotly.app/) |
 
@@ -65,6 +66,32 @@ cd dash-admin-dashboard
 pip install -r requirements.txt
 python app.py
 # → http://localhost:8051
+```
+
+---
+
+### WhatsApp Clone
+
+![WhatsApp Clone](screenshots/whatsapp.png)
+
+A modern, real-time messaging application built with Dash and WebSockets. Experience instant messaging with OTP authentication, group chats, and real-time typing indicators.
+
+**Features:** OTP Verification · One-on-One Chats · Group Chat · User Profiles · Message Search · Real-time Typing · Online Status · Message Deletion
+
+**Tech Stack:** Flask-SocketIO · PostgreSQL · Redis · Eventlet WSGI
+
+```bash
+cd whatsapp-clone
+docker compose up
+# → http://localhost:8050
+```
+
+Or manually:
+```bash
+cd whatsapp-clone
+pip install -r requirements.txt
+python run.py
+# → http://localhost:8050
 ```
 
 ---
@@ -149,6 +176,7 @@ Each dashboard is self-contained with its own `requirements.txt` and can be run 
 - [x] Adminator — General Admin Dashboard
 - [x] Dash Ecommerce Admin — E-commerce Dashboard
 - [x] Dash Nalika — Dark Analytics Dashboard
+- [x] WhatsApp Clone — Real-time Messaging Application
 - [ ] New dashboard — coming this week
 
 Dashboards are added weekly. Watch or star the repo to get notified.
