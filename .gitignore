@@ -1,2 +1,10 @@
 .venv
 OPEN_SOURCE_TEMPLATES.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# macOS
+.DS_Store
